@@ -1,0 +1,25 @@
+# EditorConfig: http://EditorConfig.org
+# Also see https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+
+# Some defaults for every file
+[*]
+# Prettier defaults per https://prettier.io/docs/configuration#editorconfig
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+# We should trim trailing whitespaces as well
+trim_trailing_whitespace = true
+
+[*.md,gitcommit,*.txt]
+max_line_length = 72
+
+# PSR-12 enforces 4 space indentation
+[*.php{,3,4,5,7}]
+indent_size = 4
+
+# Makefile uses tab to indicate a command, easy to read that as indentation
+[{Makefile,**.mk}]
+indent_style = tab

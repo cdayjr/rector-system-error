@@ -1,0 +1,15 @@
+{
+    "name": "cdayjr/rector-system-error",
+    "type": "project",
+    "require": {
+        "php": "8.4.10",
+        "phpunit/phpunit": "^12.4",
+        "rector/rector": "^2.2"
+    },
+    "authors": [
+        {
+            "name": "Chad Wade Day, Jr.",
+            "email": "cdayjr@chadwadedayjr.info"
+        }
+    ]
+}
